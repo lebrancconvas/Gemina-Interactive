@@ -11,45 +11,54 @@
     <title>Poom Yimyuean's Portfolio</title>
   </head>
   <body>
-    <header>
-        <h1>Poom Yimyuean</h1>
-        <div id="resume">
-        </div>
-      </header>
-      <section id="overview">
-        <div>
-          <h3>
-            Poom Yimyuean is a Computer Science Graduated from King Mongkut's Institute Of Technology Ladkrabang (KMITL) from Thailand. <br />
-            He is a Full Stack Developer with experience in building web applications using variuos tools like Node.js, Express, Bun, React, Vue, Nuxt, Next, Svelte, SvelteKit.<br />
-          </h3>
-        </div>
-      </section>
-      <section id="contact">
-        <h1>Contact</h1>
-        <div class="contact">
-          <div class="gmail">
-            <a href="mailto:poomyimyuean@gmail.com">
-              <img src="./src/assets/img/gmail_logo.png" alt="Gmail Logo" class="gmail-logo" />
-            </a>
-          </div>
-          <div class="linkedin">
-            <a href="https://linkedin.com/in/poom-yimyuean" target="_blank">
-              <img src="./src/assets/img/linkedin_logo.png" alt="Linkedin Logo" class="linkedin-logo" />
-            </a>
-          </div>
-          <div class="github">
-            <a href="https://github.com/lebrancconvas" target="_blank">
-              <img src="./src/assets/img/github_logo.png" alt="Github Logo" class="github-logo" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <section id="project">
-        <h1>Project</h1>
-      </section>
-      <footer>
-        <p>Made with React + TypeScript + Bun by Poom Yimyuean (@lebrancconvas) in 2025</p>
-      </footer>
-    <script type="module" src="./src/main.ts"></script>
+    <div class="main-container">
+        <header class="left-column">
+            <div>
+                <h1 class="name-title">Poom Yimyuean</h1>
+                <h2 class="job-title">Web Developer</h2>
+                <p class="bio">
+                  Poom Yimyuean is a Computer Science Graduated from King Mongkut's Institute Of Technology Ladkrabang (KMITL) from Thailand. <br />
+                  He is a Web Developer with experience in building web applications using variuos tools like Node.js, Express, Bun, React, Vue, Nuxt, Next, Svelte, SvelteKit.
+                </p>
+                <nav class="contact">
+                    <a href="https://github.com/lebrancconvas" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="mailto:poomyimyuean@gmail.com" target="_blank">Email</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="right-column">
+            <section id="projects">
+                <h3>Projects</h3>
+                <div class="project-card">
+                    <h4>Learning Management System</h4>
+                    <p>A full-featured LMS for the CS department built with Nuxt.js and Go, focusing on user-friendly course management.</p>
+                    <div class="tech-tags">
+                        <span>Nuxt.js</span>
+                        <span>Vue.js</span>
+                        <span>Go</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Another Cool Project</h4>
+                    <p>Description of another awesome project that showcases your skills in GSAP or Three.js.</p>
+                     <div class="tech-tags">
+                        <span>GSAP</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+      <p><b>Made with 💕 by Poom Yimyuean, 2025</b></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
