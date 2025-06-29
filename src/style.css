@@ -9,25 +9,22 @@ body {
     box-sizing: border-box;
 }
 
-/* หัวใจของ Layout! */
 .main-container {
     display: grid;
-    /* แบ่งหน้าจอเป็น 2 คอลัมน์ โดยคอลัมน์ขวากว้างกว่า 1.5 เท่า */
     grid-template-columns: 1fr 1.5fr;
-    gap: 4rem; /* ระยะห่างระหว่างคอลัมน์ */
+    gap: 4rem;
     max-width: 1400px;
     margin: 0 auto;
     padding: 4rem;
 }
 
-/* --- สไตล์คอลัมน์ซ้าย --- */
 .left-column {
-    position: sticky; /* ทำให้มัน 'ตรึงอยู่กับที่' */
-    top: 0; /* ตรึงไว้ที่ด้านบนสุด */
-    height: 100vh; /* ความสูงเต็มหน้าจอ */
+    position: sticky;
+    top: 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* จัดให้เนื้อหาอยู่บนสุดและล่างสุด */
+    justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -41,7 +38,7 @@ body {
 .job-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0071e3; /* สีน้ำเงินเพื่อเพิ่มจุดเด่น */
+    color: #0071e3;
     margin-bottom: 1rem;
 }
 
@@ -63,7 +60,6 @@ body {
     color: #0071e3;
 }
 
-/* --- สไตล์คอลัมน์ขวา --- */
 .right-column section {
     margin-bottom: 4rem;
 }
@@ -111,13 +107,12 @@ footer {
   text-align: center;
 }
 
-/* ทำให้ Responsive บนจอมือถือ */
 @media (max-width: 900px) {
     .main-container {
-        grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+        grid-template-columns: 1fr;
     }
     .left-column {
-        position: static; /* ยกเลิกการตรึง */
+        position: static;
         height: auto;
         text-align: center;
     }
