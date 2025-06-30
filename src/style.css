@@ -75,6 +75,7 @@ body {
     padding: 1.5rem;
     border-radius: 12px;
     margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
