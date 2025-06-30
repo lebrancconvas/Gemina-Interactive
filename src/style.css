@@ -71,6 +71,7 @@ body {
 }
 
 .project-card {
+    position: relative;
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 12px;
@@ -83,6 +84,31 @@ body {
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.link-arrow {
+    width: 20px;
+    height: 20px;
+    color: #888; /* สีของลูกศรตอนปกติ */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* ทำให้แท็ก <a> กินพื้นที่เต็มการ์ด */
+}
+
+.project-card-link:hover .link-arrow {
+    transform: translate(5px, -5px); /* ทำให้ลูกศรขยับขึ้นไปทางขวา */
+    color: #0071e3; /* เปลี่ยนเป็นสีเดียวกับ title */
 }
 
 .tech-tags span {
